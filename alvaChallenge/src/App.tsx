@@ -1,5 +1,5 @@
 import './App.css'
-import AlvaChallenge from './alvaChallenge'
+import AlvaChallenge from './AlvaChallenge.tsx'
 
 function App() {
 
