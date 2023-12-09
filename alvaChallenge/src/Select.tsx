@@ -24,7 +24,7 @@ const Select = ({ label, helpMessage, value, onChange, options }:Props) => {
       <div className="selectDiv" onClick={handleToogle}>
         <div className="divOption placeHolder">
           <p>{typeof(value)==="string"?value:value.label}</p>
-          <p>{toogleDiv ? "^" : "V"}</p>
+          <p>{toogleDiv ? "ʌ" : "v"}</p>
         </div>
         {toogleDiv &&
           options.map((option: SelectFieldType, index: number) => (
