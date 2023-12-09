@@ -81,6 +81,9 @@ button:focus-visible {
 .divDisabled {
   color:gray;
 }
+.divDisabled:hover {
+  cursor:not-allowed
+}
 
 .divOption:hover {
   cursor:pointer;

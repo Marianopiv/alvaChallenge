@@ -26,12 +26,17 @@ const Select = ({
   const handleToogle = () => {
     setToogleDiv(!toogleDiv);
   };
+
+  const handleOption = (value: SelectFieldType) => {
+    handleChange(value)
+    handleToogle()
+  }
   return (
     <>
       <p>{label}</p>
       <div className="divFather">
-        <div className="selectDiv" onClick={handleToogle}>
-          <div className="divOption placeHolder">
+        <div className="selectDiv">
+          <div className="divOption placeHolder" onClick={handleToogle}>
             <p>{typeof value === "string" ? value : value.label}</p>
             <p>{toogleDiv ? "ʌ" : "v"}</p>
           </div>
@@ -40,7 +45,7 @@ const Select = ({
               <>
                 <div
                   onClick={
-                    option.disabled ? () => "" : () => handleChange(option)
+                    option.disabled ? () => "" : () => handleOption(option)
                   }
                   className={`${
                     option.disabled ? "divDisabled" : "divOption"
