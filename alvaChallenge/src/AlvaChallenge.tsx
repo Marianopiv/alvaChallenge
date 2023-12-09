@@ -18,6 +18,10 @@ const AlvaChallenge = () => {
   const handleChange = (value:SelectFieldType|string) => {
     setOption(value)
   }
+
+  const resetOption = () => {
+    setOption("PlaceHolder")
+  }
   return (
     <Select
       label="Label"
@@ -25,6 +29,7 @@ const AlvaChallenge = () => {
       value={option}
       onChange={handleChange}
       options={options}
+      resetOption={resetOption}
     />
   );
 };

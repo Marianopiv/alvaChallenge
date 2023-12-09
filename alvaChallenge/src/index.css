@@ -67,9 +67,14 @@ button:focus-visible {
   }
 }
 
+.divFather {
+  display:flex
+}
+
 .selectDiv {
   border:1px solid black;
-  padding:0px 30px;
+  margin:0px 30px;
+  padding:0px 4px;
   border-radius:4px;
 }
 
@@ -79,6 +84,11 @@ button:focus-visible {
 
 .divOption:hover {
   cursor:pointer;
+  background-color:rgb(234 243 252)
+}
+.divSelected {
+  background-color: black;
+  color:white
 }
 
 .placeHolder {
